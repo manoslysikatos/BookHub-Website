@@ -1,0 +1,107 @@
+<! DOCTYPE HTML>
+<html lang="en">
+    
+<meta charset="UTF-8" http-equiv="content-type" content="text/html">
+
+    <head>
+        <script src="interaction.js"></script>
+        <link rel = "stylesheet" type="text/css" href="style.css">
+        <title>BookHub</title>
+        <link rel="icon" href="books-stack-of-three.png">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    </head>
+    <body>
+            
+        
+            <img id="firstImg" src="rhema-kallianpur-471933-unsplash.jpg">
+            <img id="secondImg" src="alona-po-1598658-unsplash.jpg">
+            <img id="thirdImg" src="dariusz-sankowski-56727-unsplash.jpg">
+            <ul id="menu">
+                <li id="Search" class="menuOptions">Search a book</li>
+                <li id="BookHub" title="Main Page">BookHub</li>
+                <li id="Add" class="menuOptions">Add a book</li>
+            </ul>
+            <div id="notification">
+                <h3>You have a message!!</h3>
+                <h2></h2>
+                <h4></h4>
+                <br>
+            </div>
+        <div id="mainBody">
+            <h1 title="Created by Manos Lysikatos"><a href="https://github.com/manoslysikatos" target="_blank">BookHub</a></h1>
+            <h2 id="quotes">'Sleep is good, he said, and books are better'</h2>
+            <br>
+            <h3 id="creator">George R. R. Martin</h3>
+        </div>
+        <div id="searchPage">
+            <input id="searchBar" type="text" placeholder="Search a book or an author...">
+            
+            
+            
+            <h3 id="previousNav" class="results">&#60</h3>
+            <h3 id="nextNav" class="results">&#62</h3>
+            <div id="results">
+                <h1 id="verticalAlign"></h1>
+                <h1 id="verticalAlign"><em>Title</em></h1>
+                <p id="titleFld"></p>
+                <h1><em>Author</em></h1> 
+                <p id="authorFld"></p>
+                <h1><em>Genre</em></h1>  
+                <p id="genreFld"></p>
+                <h1><em>Price</em></h1>
+                <p id="priceFld"></p>
+                <h1><em>ID</em></h1>
+                <p id="idFld"></p>
+            </div>
+        </div>
+        <div id="addPage">
+            <form id="addBook" method="post" action="/books/">
+                <h3>Title</h3>
+                <input type="text" name="title" id="titleField">
+                <br><br>
+                <h3>Author</h3>
+                <input type="text" name="author" id="authorField">
+                <br><br>
+                <h3>Genre</h3>
+                
+                    <select id="GenreField" name="genre" required>
+                        <option selected disabled hidden>Choose Here</option>
+                        <option value="Science Fiction" class="options">ScienceFiction</option>
+                        <option value="Satire" class="options">Satire</option>
+                        <option value="Drama" class="options">Drama</option>
+                        <option value="Action and Adventure" class="options">Action and Adventure</option>
+                        <option value="Romance" class="options">Romance</option>
+                        <option value="Mystery" class="options">Mystery</option>
+                        <option value="Horror" class="options">Horror</option>
+                    </select>
+               
+                <br><br>
+                <h3>Price</h3>
+                <input type="text" name="price" id="priceField">
+                <br><br>
+                <button form="addBook" id="submitBtn"><em>Submit</em></button>
+                
+                
+                
+                
+            </form>
+            
+           
+        </div>
+        
+        <div id="loadingScreen">
+                <h1>Loading Page...</h1>
+                <br>
+                <div id="balls">
+                    
+                    <div id="ball1"></div>
+                    <div id="ball2"></div>
+                    <div id="ball3"></div>
+                </div>
+            </div>
+    
+    </body>
+    
+
+</html>
